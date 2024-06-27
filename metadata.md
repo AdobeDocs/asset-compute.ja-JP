@@ -12,10 +12,10 @@ feature-set: Experience Manager Assets
 git-repo: https://github.com/AdobeDocs/asset-compute.ja-JP
 index: y
 recommendations: noDisplay
-source-git-commit: cb87ab6081d53610acf27419fa5103b3ae1ead03
+source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 100%
+source-wordcount: '132'
+ht-degree: 92%
 
 ---
 
@@ -30,9 +30,9 @@ metadata.md ファイルには、リポジトリ内にあるユーザーガイ�
 | solution-hub-url | サポートハブページを開きます。 |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。まだ実装されていません |
 | getting-started-url | 「はじめに」のページへのリンク。 |
-| tutorials-url | ビデオチュートリアル（helpx チュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右側のレールに表示される見出しレベルの数を決定します。デフォルトは 2 です。 |
-| git-repo | 内部使用のマスターリポジトリーの場所を指定します。 |
+| tutorials-url | ビデオチュートリアル（Helpx チュートリアルまたは知識の移行チュートリアル）へのリンク |
+| mini-toc-levels | 右側のパネルに表示される見出しレベルの数を決定します。デフォルトは 2 です。 |
+| git-repo | 内部使用のプライマリリポジトリの場所を指定します。 |
 
 TOC.md ファイル内
 

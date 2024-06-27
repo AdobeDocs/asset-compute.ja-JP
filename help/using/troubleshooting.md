@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に関連するトラブルシューティング'
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 exl-id: 017fff91-e5e9-4a30-babf-5faa1ebefc2f
-source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
+source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 100%
+source-wordcount: '273'
+ht-degree: 76%
 
 ---
 
@@ -18,17 +18,17 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 * 失敗時のクリーンアップに起因する可能性のあるエラーが、元の問題を隠す独自のエラーを発生させないようにします。
 
 * 新しい [!DNL Asset Compute Service] 統合で初めて開発者ツールを起動する際、Asset Compute イベントジャーナルの設定が完全でない場合は、最初の処理リクエストが失敗する場合があります。ジャーナルが設定されるまでしばらく待ってから、別のリクエストを送信します。
-* Asset Compute の `/register` リクエストまたは `/process` リクエストの送信でエラーが発生した場合は、必要なすべての API が [!DNL Adobe I/O] プロジェクトとワークスペース（Asset Compute、[!DNL Adobe I/O] イベント、[!DNL Adobe I/O] イベント管理、[!DNL Adobe I/O] Runtime）に追加されていることを確認します。
+* 必要なすべての API のAsset compute、Adobeの確認 [!DNL I/O Events]、イベント管理、ランタイムがAdobeに含まれています [!DNL `I/O Project`] 回避するWorkspace `/register` または `/process` リクエストエラー。
 
-## [!DNL Adobe I/O] CLI を使用してログインする  {#login-via-aio-cli}
+## Adobeを使用したログインの問題 [!DNL aio-cli] {#login-via-aio-cli}
 
-[ [!DNL Adobe I/O] CLI を通じて](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli)、[!DNL Adobe Developer Console] にログインする際に問題が発生した場合は、カスタムアプリケーションの開発、テストおよびデプロイに必要な資格情報を手動で追加します。
+へのログインで問題が発生した場合 [!DNL Adobe Developer Console] [Adobe経由 [!DNL aio-cli]](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli)次に、カスタムアプリケーションの開発、テストおよびデプロイに必要な資格情報を手動で追加します。
 
-1. [Adobe Developer Console](https://console.adobe.io/) で Adobe Developer App Builder プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL ダウンロード]**」を押します。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
+1. [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) で Adobe Developer App Builder プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL ダウンロード]**」を押します。このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 
 1. Adobe Developer App Builder アプリケーションの ENV ファイルに移動します。
 
-1. [!DNL Adobe I/O] Runtime 資格情報を追加します。ダウンロードした JSON から [!DNL Adobe I/O] Runtime の資格情報を取得します。資格情報は `project.workspace.services.runtime` の配下にあります。[!DNL Adobe I/O] Runtime の資格情報を `AIO_runtime_XXX` 変数に追加します。
+1. Adobeを追加 [!DNL I/O Runtime] 資格情報。 Adobeの取得 [!DNL I/O Runtime] ダウンロードした JSON からの資格情報。 資格情報は `project.workspace.services.runtime` の配下にあります。[!DNL Adobe I/O] Runtime の資格情報を `AIO_runtime_XXX` 変数に追加します。
 
    ```json
    AIO_runtime_auth=

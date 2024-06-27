@@ -2,16 +2,16 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
+source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '775'
+ht-degree: 53%
 
 ---
 
 # カスタムアプリケーションのテストとデバッグ {#test-debug-custom-worker}
 
-## カスタムアプリケーションのユニットテストの実行 {#test-custom-worker}
+## カスタムアプリケーションの単体テストの実行 {#test-custom-worker}
 
 [Docker Desktop](https://www.docker.com/get-started) をコンピューターにインストールします。カスタムワーカーをテストするには、アプリケーションのルートで次のコマンドを実行します。
 
@@ -25,17 +25,17 @@ To run tests for a custom application, run `aio asset-compute test-worker` comma
 Document interactively running `adobe-asset-compute` commands `test-worker` and `run-worker`.
 -->
 
-これにより、以下で説明するように、プロジェクト内の Asset Compute アプリケーションアクションに対するカスタムユニットテストフレームワークが実行されます。これは `package.json` ファイル内の設定を通じて接続されます。また、Jest などの JavaScript ユニットテストをおこなうこともできます。`aio app test` では両方を実行します。
+このコマンドは、以下に示すように、プロジェクト内のAsset computeアプリケーション アクションに対してカスタム単体テスト フレームワークを実行します。 これは `package.json` ファイル内の設定を通じて接続されます。また、Jest などの JavaScript ユニットテストをおこなうこともできます。この `aio app test` 両方を実行します。
 
-[aio-cli-plugin-asset-compute](https://github.com/adobe/aio-cli-plugin-asset-compute#install-as-local-devdependency) プラグインは、カスタムアプリケーションに開発依存コンポーネントとして組み込まれているので、ビルド／テストシステムにインストールする必要はありません。
+この [aio-cli-plugin-asset-compute](https://github.com/adobe/aio-cli-plugin-asset-compute#install-as-local-devdependency) プラグインは、開発依存関係としてカスタムアプリケーションアプリに埋め込まれているため、ビルド/テストシステムにインストールする必要はありません。
 
 ### アプリケーションユニットテストフレームワーク {#unit-test-framework}
 
-Asset Compute アプリケーションのユニットテストフレームワークを使用すると、コードを書かずにアプリケーションをテストできます。アプリケーションのソースからレンディションへのファイル原則を利用します。テストソースファイル、オプションパラメーター、期待されるレンディション、カスタム検証スクリプトを含んだテストケースを定義するには、特定のファイルおよびフォルダー構造を設定する必要があります。デフォルトでは、レンディションのバイト等価性が比較されます。さらに、単純な JSON ファイルを使用して外部 HTTP サービスのモックを容易に作成できます。
+asset computeアプリケーション単体テストフレームワークを使用すると、コードを記述せずにアプリケーションをテストできます。 アプリケーションのソースからレンディションへのファイル原則を利用します。テストソースファイル、オプションパラメーター、想定されるレンディション、カスタム検証スクリプトを含むテストケースを定義するには、特定のファイルとフォルダー構造を設定する必要があります。 デフォルトでは、レンディションのバイト等価性が比較されます。さらに、単純な JSON ファイルを使用して外部 HTTP サービスのモックを容易に作成できます。
 
 ### テストの追加 {#add-tests}
 
-テストは、[!DNL Adobe I/O] プロジェクトのルートレベルにある `test` フォルダーに含まれている必要があります。各アプリケーションのテストケースは、パス `test/asset-compute/<worker-name>` 内にテストケースごとに 1 つのフォルダーとして配置する必要があります。
+内でのテストが想定されています `test` プロジェクトのルートレベルのフォルダー。 各アプリケーションのテストケースは、パス `test/asset-compute/<worker-name>` 内にテストケースごとに 1 つのフォルダーとして配置する必要があります。
 
 ```yaml
 action/
@@ -66,11 +66,11 @@ test/
 
 ### テスト出力 {#test-output}
 
-カスタムアプリケーションのログを含めた詳細なテスト出力は、`aio app test` の出力で示されているように、Adobe Developer App Builder アプリのルートの `build` フォルダーで使用できます。
+この `build` Adobe Developer App Builder アプリケーションのルートにあるディレクトリには、カスタムアプリケーションの詳細なテスト結果とログが格納されます。 これらの詳細は、の出力にも表示されます `aio app test` コマンド。
 
 ### モック用外部サービス {#mock-external-services}
 
-テストケースで `mock-<HOST_NAME>.json` ファイルを定義すると、アクション内で外部サービス呼び出しのモックを作成できます。ここで、HOST_NAME はモックを作成するホストです。ユースケースの例としては、S3 を個別に呼び出すアプリケーションがあります。新しいテスト構造は次のようになります。
+以下を作成することで、アクション内での外部サービス呼び出しをシミュレートできます。 `mock-<HOST_NAME>.json` テストシナリオ用のファイル。HOST_NAME は、模倣する特定のホストです。 ユースケースの例としては、S3 に対して個別の呼び出しを行うアプリケーションがあります。 新しいテスト構造は次のようになります。
 
 ```json
 test/
@@ -101,11 +101,11 @@ test/
 }]
 ```
 
-`worker-animal-pictures` サンプルには、やり取りするウィキメディアサービスの[モックファイル](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-animal-pictures/test/asset-compute/worker-animal-pictures/simple-test/mock-upload.wikimedia.org.json)が含まれています。
+例 `worker-animal-pictures` 次を含む [モックファイル](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-animal-pictures/test/asset-compute/worker-animal-pictures/simple-test/mock-upload.wikimedia.org.json) （連携するウィキメディアサービス用）
 
 #### テストケース間でのファイルの共有 {#share-files-across-test-cases}
 
-複数のテスト間で `file.*`、`params.json`、`validate` のいずれかのスクリプトを共有する場合は、相対的なシンボリックリンクを使用することをお勧めします。これらは Git でサポートされます。共有ファイルには異なる名前をつけることもあるので、必ず一意の名前を付けてください。以下の例では、いくつかの共有ファイルとテスト自体のファイルを組み合わせています。
+共有する場合、Adobeでは相対シンボリックリンクの使用をお勧めします `file.*`, `params.json` または `validate` 複数のテストのスクリプト。 Git でサポートされています。 共有ファイルには異なる名前をつけることもあるので、必ず一意の名前を付けてください。以下の例では、いくつかの共有ファイルとテスト自体のファイルを組み合わせています。
 
 ```json
 tests/
@@ -158,13 +158,13 @@ tests/
 }
 ```
 
-エラー理由の一覧と説明については、[Asset Compute のエラー理由](https://github.com/adobe/asset-compute-commons#error-reasons)を参照してください。
+の完全なリストと説明を参照してください [Asset computeエラーの理由](https://github.com/adobe/asset-compute-commons#error-reasons).
 
 ## カスタムアプリケーションのデバッグ {#debug-custom-worker}
 
 次の手順は、Visual Studio Code を使用したカスタムアプリケーションのデバッグ方法を示しています。ライブログの確認、ブレークポイントのヒット、コードのステップスルー、ローカルコード変更のライブ再読み込みをアクティベーションのたびにおこなうことができます。
 
-これらの手順の多くは通常、初期設定では `aio` で自動的に実行されます。詳しくは、[Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/first_app)のアプリケーションのデバッグの節を参照してください。現時点では、以下の手順には回避策が含まれています。
+この `aio` これらの手順の多くは、すぐに使用できる自動化機能です。 のアプリケーションのデバッグの節に移動します。 [Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/first_app). 現時点では、以下の手順には回避策が含まれています。
 
 1. GitHub の最新の [wskdebug](https://github.com/apache/openwhisk-wskdebug) とオプションの [ngrok](https://www.npmjs.com/package/ngrok) をインストールします。
 
@@ -173,11 +173,11 @@ tests/
    npm install -g ngrok --unsafe-perm=true
    ```
 
-1. ユーザー設定 JSON ファイルに追加します。古い VS Code デバッガーが引き続き使用されます。新しいデバッガーには wskdebug（`"debug.javascript.usePreview": false`）に関して[いくつかの問題](https://github.com/apache/openwhisk-wskdebug/issues/74)があります。
-1. `aio app run` で開いているアプリのインスタンスをすべて閉じます。
+1. JSON ファイルのユーザー設定に追加を加えます。 古い Visual Studio Code デバッガーが引き続き使用されます。 新しい方は [いくつかの問題](https://github.com/apache/openwhisk-wskdebug/issues/74) wskdebug の場合： `"debug.javascript.usePreview": false`.
+1. 経由で開いているアプリのインスタンスをすべて閉じる `aio app run`.
 1. `aio app deploy` を使用して最新のコードをデプロイします。
-1. `aio asset-compute devtool` を使用して、Asset Compute 開発者ツールのみを実行します。ツールを開いたままにします。
-1. VS Code エディターで、次のデバッグ設定を `launch.json` に追加します。
+1. を使用して、Asset compute開発ツールのみを実行します。 `aio asset-compute devtool`. ツールを開いたままにします。
+1. Visual Studio Code Editor で、次のデバッグ設定をに追加します `launch.json`:
 
    ```json
    {
@@ -200,11 +200,11 @@ tests/
 
    `aio app deploy` の出力から `ACTION NAME` を取得します。
 
-1. 実行／デバッグ設定から `wskdebug worker` を選択し、再生アイコンを押します。**[!UICONTROL Debug Console]** ウィンドウに **[!UICONTROL Ready for activations]** と表示されるまで待ちます。
+1. 実行／デバッグ設定から `wskdebug worker` を選択し、再生アイコンを押します。表示されるまで開始するのを待ちます **[!UICONTROL アクティベーションの準備完了]** が含まれる **[!UICONTROL デバッグコンソール]** ウィンドウ。
 
-1. 開発者ツールで「**[!UICONTROL run]**」をクリックします。実行中のアクションが VS Code エディターに表示され、ログの表示が開始されます。
+1. 開発者ツールで「**[!UICONTROL run]**」をクリックします。Visual Studio のコードエディターで実行されているアクションが表示され、ログが表示され始めます。
 
-1. コードにブレークポイントを設定し、再実行すると、ブレークポイントがヒットします。
+1. コードにブレークポイントを設定します。 その後、もう一度実行すると、ヒットします。
 
 コードの変更内容はすべてリアルタイムで読み込まれ、次回アクティベーションがおこなわれるとすぐに有効になります。
 

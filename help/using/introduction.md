@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] について'
 description: 「[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです」。
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: 5257e091730f3672c46dfbe45c3e697a6555e6b1
+source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 100%
+source-wordcount: '278'
+ht-degree: 59%
 
 ---
 
@@ -13,19 +13,19 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な [!DNL Adobe Experience Cloud] サービスです。画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
-開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対応できます。このサービスは [!DNL Adobe I/O] ランタイムで動作します。Node.js で作成された [!DNL Adobe Developer App Builder] ヘッドレスアプリを通じて拡張できます。これらのアプリでは、外部 API を呼び出して画像操作を実行したり [!DNL Adobe Sensei] サポートを利用するなどのカスタム操作をおこなえます。
+開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインして、カスタムユースケースに対処できます。 サービスはAdobeで動作します [!DNL I/O Runtime]. Node.js で作成された [!DNL Adobe Developer App Builder] ヘッドレスアプリを通じて拡張できます。外部 API を呼び出して画像操作を実行したり、を活用したりするなどのカスタム操作を実行できます [!DNL Adobe Sensei] サポート。
 
-[!DNL Adobe Developer App Builder] は、[!DNL Adobe I/O] ランタイム上にカスタム Web アプリケーションを作成およびデプロイして Adobe Experience Cloud のソリューションを拡張するためのフレームワークです。カスタムアプリケーションを作成する場合、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API をオーケストレーションすることができます。詳しくは、[Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview/)を参照してください。
+[!DNL Adobe Developer App Builder] は、Adobe上でカスタム web アプリケーションを構築およびデプロイするためのフレームワークです [!DNL I/O Runtime] Adobe Experience Cloud ソリューションを拡張する。 カスタムアプリケーションを作成する場合、開発者は以下を利用できます [!DNL React Spectrum] （Adobeの UI ツールキット）、マイクロサービスの作成、カスタムイベントの作成、API の調整をおこないます。 詳しくは、[Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview/?lang=ja)を参照してください。
 
 >[!NOTE]
 >
->現在、[!DNL Asset Compute Service] は Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] 経由でのみ使用できます。管理者は、[!DNL Asset Compute Service] を呼び出してアセットを処理に渡すことができる処理プロファイルを作成します。詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
+>現在、[!DNL Asset Compute Service] は Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] 経由でのみ使用できます。管理者は、[!DNL Asset Compute Service] を呼び出してアセットを処理に渡すことができる処理プロファイルを作成します。参照： [アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use).
 
 ## [!DNL Asset Compute Service] のサポート対象ユースケース  {#possible-use-cases-benefits}
 
 [!DNL Asset Compute Service] は、基本的な画像処理、Adobe アプリケーション固有の変換、複雑なビジネス要件をオーケストレーションするカスタムアプリケーションの作成など、いくつかの一般的なビジネスユースケースをサポートしています。
 
-[!DNL Asset Compute] Web サービスを使用して、様々なファイルタイプのサムネールを生成したり、[サポートされているファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)の高画質な画像レンダリングを生成したりできます。詳しくは、[カスタム設定でサポートされるユースケース](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=ja)を参照してください。
+を使用できます [!DNL Asset Compute] 様々なファイルタイプのサムネールを生成する web サービス、向けの高品質な画像レンダリング [サポートされているファイル形式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support). 詳しくは、[カスタム設定でサポートされるユースケース](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use)を参照してください。
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/asset-microservices-overview.html?lang=ja)。
+>* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)。
 >* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview)。
->* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/file-format-support.html?lang=ja)。
+>* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support).
 
 <!-- **TBD:**
 * Clarify the service can only be used within AEM as Cloud Service. The docs provided as context for custom application developers. Not to be used as a standalone service.
