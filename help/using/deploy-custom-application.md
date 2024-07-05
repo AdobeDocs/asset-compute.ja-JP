@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service]  カスタムアプリケーションの�
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのデプロイ。'
 exl-id: a68d4f59-8a8f-43b2-8bc6-19320ac8c9ef
 source-git-commit: f15b9819d3319d22deccdf7e39c0f72728baaa39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ App Builder プロジェクトとワークスペースが、アクションを�
 
 >[!CAUTION]
 >
->重要な場合は個人のワークスペースを使用しない [!DNL Experience Manager] 環境。
+>重要な [!DNL Experience Manager] 環境では個人用ワークスペースを使用しないでください。
 
 >[!MORELIKETHIS]
 >
