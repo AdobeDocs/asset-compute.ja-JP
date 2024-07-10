@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 65%
 
    * [Git](https://git-scm.com/)
    * [Docker Desktop](https://www.docker.com/get-started)
-   * [NodeJS](https://nodejs.org)（v14 LTS、奇数バージョンはお勧めしません）と [NPM](https://www.npmjs.com)。OS X HomeBrew のユーザーが実行できる操作 `brew install node` を両方ともインストールします。 それ以外の場合は、[NodeJS ダウンロードページ](https://nodejs.org/ja/)からダウンロードします
-   * NodeJS に適した IDE、Adobeは次をお勧めします [Visual Studio Code （VS Code）](https://code.visualstudio.com) これは、デバッガーでサポートされている IDE です。 他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません
-   * 最新Adobeのインストール [[!DNL aio-cli]](https://github.com/adobe/aio-cli) （`aio`）
+   * [NodeJS](https://nodejs.org)（v14 LTS、奇数バージョンはお勧めしません）と [NPM](https://www.npmjs.com)。 OS X HomeBrew のユーザーは、`brew install node` を実行して両方をインストールできます。 それ以外の場合は、[NodeJS ダウンロードページ](https://nodejs.org/ja/)からダウンロードします
+   * NodeJS に適した IDE。アドビでは、[Visual Studio Code（VS Code）](https://code.visualstudio.com)をお勧めします。デバッガーでサポートされている IDE です。 その他の任意の IDE をコードエディターとして使用できますが、高度な使用方法（デバッガーなど）はまだサポートされていません
+   * 最新の Adobe [[!DNL aio-cli]](https://github.com/adobe/aio-cli)（`aio`）のインストール
    <!-- - install using `npm install -g @adobe/aio-cli@7.1.0` -->
 
 1. 必ず[前提条件](/help/using/understand-extensibility.md#prerequisites-and-provisioning)を満たすようにしてください。
@@ -36,17 +36,17 @@ ht-degree: 65%
 
 ## App Builder プロジェクトの設定 {#create-App-Builder-project}
 
-1. にシステム管理者または開発者の役割があることを確認してください [!DNL Experience Cloud] 組織。 システム管理者 [Admin Console](https://adminconsole.adobe.com/overview)、がこの役割を設定します。
+1. [!DNL Experience Cloud] 組織にシステム管理者または開発者の役割があることを確認します。 システム管理者は、[Admin Console](https://adminconsole.adobe.com/overview) でこの役割を設定します。
 
-1. [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) にログオンします。[!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ [!DNL Experience Cloud] 組織に属していることを確認します。Adobe Developer Consoleの詳細については、を参照してください。 [コンソールのドキュメント](https://developer.adobe.com/developer-console/docs/guides/).
+1. [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) にログオンします。 [!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ [!DNL Experience Cloud] 組織に属していることを確認します。 Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://developer.adobe.com/developer-console/docs/guides/)を参照してください。
 
-1. [App Builder プロジェクトを作成します](https://developer.adobe.com/app-builder/docs/getting_started/first_app/)。**[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。「App Builder」を選択します。`Production` と `Stage` の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。必要に応じて、ワークスペース（例：`Development`）を追加します。
+1. [App Builder プロジェクトを作成します](https://developer.adobe.com/app-builder/docs/getting_started/first_app/)。 **[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。 「App Builder」を選択します。 `Production` と `Stage` の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。 必要に応じて、ワークスペース（例：`Development`）を追加します。
 
-1. この App Builder プロジェクトで、ワークスペースを選択し、Asset Compute に必要なサービスを購読します。**Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
+1. この App Builder プロジェクトで、ワークスペースを選択し、Asset Compute に必要なサービスを購読します。 **Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。 最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。 開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
 
 ## 次の手順 {#next-step}
 
-環境が設定されると、次の操作を実行できます [カスタムアプリケーションの作成](develop-custom-application.md).
+これで環境が設定されたので、[カスタムアプリケーションを作成](develop-custom-application.md)する準備が整いました。
 
 <!-- More ideas:
  

@@ -9,9 +9,9 @@ user-guide-title: Asset Compute Service ガイド
 user-guide-description: このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
 breadcrumb-title: Asset Compute Service ガイド
 source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 + [Asset Compute Service ユーザーガイド](home.md)
 + [概要](introduction.md)
-+ [サポートされているファイル形式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support)
++ [サポートされているファイル形式](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)
 + [アーキテクチャ](architecture.md)
 + [API リファレンス](api.md)
 + Asset Compute Service の拡張 {#extend}
