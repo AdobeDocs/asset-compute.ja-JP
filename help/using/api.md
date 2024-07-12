@@ -3,7 +3,7 @@ title: 「[!DNL Asset Compute Service] HTTP API」
 description: 「カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API」。
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
 source-git-commit: f15b9819d3319d22deccdf7e39c0f72728baaa39
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2862'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ ht-degree: 100%
    * メタスコープ：`event_receiver_api`
    * スコープ：`event_receiver,event_receiver_api`
 
-* Adobe [!DNL `I/O Management API`]
+* アドビ [!DNL `I/O Management API`]
    * メタスコープ：`ent_adobeio_sdk`
    * スコープ：`adobeio_api,additional_info.roles,additional_info.projectedProductContext`
 

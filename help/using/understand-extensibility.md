@@ -3,7 +3,7 @@ title: ' [!DNL Asset Compute Service] の拡張について'
 description: カスタムアセット処理を実行するために [!DNL Asset Compute Service] の機能を拡張するタイミングと方法。
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
 source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 100%
 

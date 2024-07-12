@@ -3,7 +3,7 @@ title: カスタムアプリケーションの動作について
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの仕組みを理解するのに役立つ内部動作'
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
 source-git-commit: f15b9819d3319d22deccdf7e39c0f72728baaa39
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 100%
 

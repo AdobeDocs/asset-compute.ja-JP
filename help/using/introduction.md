@@ -3,7 +3,7 @@ title: ' [!DNL Asset Compute Service] について'
 description: 「[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです」。
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
 source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
 
