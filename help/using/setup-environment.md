@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
+source-git-commit: db38b9dc27505aa7e04cf58a646005fc2e0e8782
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -43,6 +43,10 @@ ht-degree: 100%
 1. [App Builder プロジェクトを作成します](https://developer.adobe.com/app-builder/docs/getting_started/first_app/)。 **[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。 「App Builder」を選択します。 `Production` と `Stage` の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。 必要に応じて、ワークスペース（例：`Development`）を追加します。
 
 1. この App Builder プロジェクトで、ワークスペースを選択し、Asset Compute に必要なサービスを購読します。 **Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。 最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。 開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
+
+   >[!NOTE]
+   >
+   >JWT は非推奨（廃止予定）になり、秘密鍵をダウンロードできません。 テストツールの更新に取り組んでいる間、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、開発ツールは機能しません。
 
 ## 次の手順 {#next-step}
 

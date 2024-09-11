@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
+source-git-commit: db38b9dc27505aa7e04cf58a646005fc2e0e8782
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 100%
+source-wordcount: '1542'
+ht-degree: 97%
 
 ---
 
@@ -96,6 +96,10 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
    ```conf
    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
    ```
+
+   >[!NOTE]
+   >
+   >JWT は非推奨（廃止予定）になり、秘密鍵をダウンロードできません。 テストツールの更新に取り組んでいる間、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、開発ツールは機能しません。
 
 1. Adobe Developer Console からファイルをダウンロードします。 プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。 ファイルは「`<namespace>-<workspace>.json`」というファイル名でダウンロードされます。 次のいずれかの操作をおこないます。
 
