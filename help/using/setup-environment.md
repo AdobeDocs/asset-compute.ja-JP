@@ -3,9 +3,9 @@ title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
 source-git-commit: db38b9dc27505aa7e04cf58a646005fc2e0e8782
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >JWT は非推奨（廃止予定）になり、秘密鍵をダウンロードできません。 テストツールの更新に取り組んでいる間、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、開発ツールは機能しません。
+   >JWT は廃止されており、秘密鍵はダウンロードできません。アドビがテストツールのアップデートに取り組んでいる間、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、DevTools は機能しません。
 
 ## 次の手順 {#next-step}
 
