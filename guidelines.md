@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ドキュメントの改善に役立つアイデアの投稿を歓迎します。ただし、コメント、イシューおよびプルリクエストは、*投稿*&#x200B;専用です。製品の使用方法、プロジェクトの実装方法、技術的な問題の解決方法についての質問に回答するためではありません。
 
-使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Manager] カスタマーサポートポータル](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=ja#home)の通常のサポートプロセスを通じて報告したり、[[!DNL Experience Manager]  コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)でディスカッションしたりする必要があります。
+使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Manager] カスタマーサポートポータル](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;lang=ja#home)の通常のサポートプロセスを通じて報告したり、[[!DNL Experience Manager]  コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)でディスカッションしたりする必要があります。
 
 ***ドキュメントの投稿はアドビカスタマーケアに代わるものではなく***、サポート関連の質問への回答を求める投稿は拒否されます。
 
