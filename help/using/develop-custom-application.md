@@ -2,9 +2,9 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: db38b9dc27505aa7e04cf58a646005fc2e0e8782
+source-git-commit: 94fd8c0888185f64825046b7999655e9501a71fe
 workflow-type: ht
-source-wordcount: '1542'
+source-wordcount: '1489'
 ht-degree: 100%
 
 ---
@@ -90,17 +90,17 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
 #### ENV ファイルへの資格情報の追加 {#add-credentials-env-file}
 
 開発ツールの後続の資格情報を `.env` ファイルに挿入します。 ファイルは、App Builder プロジェクトのルートにあります。
+<!--
+1. Add the absolute path to the private key file created while adding services to your App Builder Project:
 
-1. App Builder プロジェクトにサービスを追加する際に作成された、秘密鍵ファイルへの絶対パスを追加します。
-
-   ```conf
-   ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
-   ```
+    ```conf
+    ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
+    ```
 
    >[!NOTE]
    >
-   >JWT は廃止されており、秘密鍵はダウンロードできません。アドビがテストツールのアップデートに取り組んでいる間、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、DevTools は機能しません。
-
+   >JWT is deprecated and Private Key is not available for download. While we are working on updating the testing tools, note that custom workers created using OAuth can be deployed but devtools would not work.
+-->
 1. Adobe Developer Console からファイルをダウンロードします。 プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。 ファイルは「`<namespace>-<workspace>.json`」というファイル名でダウンロードされます。 次のいずれかの操作をおこないます。
 
    * ファイル名を「`console.json`」に変更し、プロジェクトのルートに移動します。
