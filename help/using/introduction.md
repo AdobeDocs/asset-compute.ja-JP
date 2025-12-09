@@ -44,7 +44,7 @@ ht-degree: 99%
 
 >[!MORELIKETHIS]
 >
->* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)。
+>* [&#x200B; [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)。
 >* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/intro_and_overview/#)。
 >* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)。
 
