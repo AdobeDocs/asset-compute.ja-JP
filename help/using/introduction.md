@@ -1,21 +1,21 @@
 ---
 title: ' [!DNL Asset Compute Service] について'
-description: 「[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです」。
+description: '[!DNL Asset Compute Service] は、複雑さを軽減しスケーラビリティを向上させるクラウドネイティブなアセット処理サービスです。'
 exl-id: f8c89f65-5a94-44f3-aaac-4612ae291101
-source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
+source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# [!DNL Asset Compute Service] の概要 {#overview}
+# [!DNL Asset Compute Service] の概要  {#overview}
 
 [!DNL Asset Compute Service] は、デジタルアセットを処理するためのスケーラブルかつ拡張可能な [!DNL Adobe Experience Cloud] サービスです。 画像、ビデオ、ドキュメントなどのファイル形式を、サムネール、抽出テキストとメタデータ、アーカイブなど、様々なレンディションに変換できます。
 
 開発者は、カスタムアセットアプリケーション（カスタムワーカーとも呼ばれます）をプラグインとして使用し、カスタムユースケースに対応できます。 このサービスは Adobe [!DNL I/O Runtime] で動作します。 Node.js で作成された [!DNL Adobe Developer App Builder] ヘッドレスアプリを通じて拡張できます。 これらのアプリでは、外部 API を呼び出して画像操作を実行したり、[!DNL Adobe Sensei] サポートを活用したりするなどのカスタム操作を実行できます。
 
-[!DNL Adobe Developer App Builder] は、Adobe [!DNL I/O Runtime] 上にカスタム web アプリケーションを作成およびデプロイして、Adobe Experience Cloud ソリューションを拡張するためのフレームワークです。 カスタムアプリケーションを作成するために、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API を調整できます。 詳しくは、[Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview/)を参照してください。
+[!DNL Adobe Developer App Builder] は、Adobe [!DNL I/O Runtime] 上にカスタム web アプリケーションを作成およびデプロイして、Adobe Experience Cloud ソリューションを拡張するためのフレームワークです。 カスタムアプリケーションを作成するために、開発者は [!DNL React Spectrum]（アドビの UI ツールキット）を活用し、マイクロサービスを作成し、カスタムイベントを作成し、API を調整できます。 詳しくは、[Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/intro_and_overview/#)を参照してください。
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ ht-degree: 100%
 >[!MORELIKETHIS]
 >
 >* [ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] のアセットマイクロサービスを使用したアセット処理の概要](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)。
->* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/overview)。
+>* [Adobe Developer App Builder のドキュメント](https://developer.adobe.com/app-builder/docs/intro_and_overview/#)。
 >* [処理でサポートされるファイル形式](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)。
 
 <!-- **TBD:**

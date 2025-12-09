@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に関連するトラブルシューティング'
 description: ' [!DNL Asset Compute Service] を使用したカスタムアプリケーションのトラブルシューティングとデバッグ。'
 exl-id: 017fff91-e5e9-4a30-babf-5faa1ebefc2f
-source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
+source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ Asset Compute Service のトラブルシューティングに役立つ一般的�
 
 ## Adobe [!DNL aio-cli] を使用したログインの問題 {#login-via-aio-cli}
 
-[Adobe  [!DNL aio-cli] を使用して](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli) [!DNL Adobe Developer Console] にログインできない場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
+[Adobe  [!DNL aio-cli] を使用して](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#3-signing-in-from-cli) [!DNL Adobe Developer Console] にログインできない場合は、カスタムアプリケーションの開発、テスト、デプロイに必要な資格情報を手動で追加します。
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) で Adobe Developer App Builder プロジェクトとワークスペースに移動し、右上隅にある「**[!UICONTROL ダウンロード]**」を押します。 このファイルを開き、この JSON をコンピューター上の安全な場所に保存します。
 

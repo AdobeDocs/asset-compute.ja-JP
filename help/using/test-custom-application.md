@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
+source-git-commit: f199cecfe4409e2370b30783f984062196dd807d
 workflow-type: tm+mt
 source-wordcount: '775'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -164,7 +164,7 @@ tests/
 
 次の手順は、Visual Studio Code を使用したカスタムアプリケーションのデバッグ方法を示しています。 ライブログの確認、ブレークポイントのヒット、コードのステップスルー、ローカルコード変更のライブ再読み込みをアクティベーションのたびにおこなうことができます。
 
-`aio` では、これらの手順の多くが標準で自動化されます。 [Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/getting_started/first_app)のアプリケーションのデバッグの節を参照してください。 現時点では、以下の手順には回避策が含まれています。
+`aio` では、これらの手順の多くが標準で自動化されます。 [Adobe Developer App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#)のアプリケーションのデバッグの節を参照してください。 現時点では、以下の手順には回避策が含まれています。
 
 1. GitHub の最新の [wskdebug](https://github.com/apache/openwhisk-wskdebug) とオプションの [ngrok](https://www.npmjs.com/package/ngrok) をインストールします。
 
@@ -200,7 +200,7 @@ tests/
 
    `aio app deploy` の出力から `ACTION NAME` を取得します。
 
-1. 実行／デバッグ設定から `wskdebug worker` を選択し、再生アイコンを押します。 **[!UICONTROL デバッグコンソール]**&#x200B;ウィンドウに&#x200B;**[!UICONTROL アクティベーションの準備完了]**&#x200B;と表示されるまで、起動を待ちます。
+1. 「run/debugged configuration」から「`wskdebug worker`」を選択し、「再生」アイコンを押します。 **[!UICONTROL デバッグコンソール]**&#x200B;ウィンドウに&#x200B;**[!UICONTROL アクティベーションの準備完了]**&#x200B;と表示されるまで、起動を待ちます。
 
 1. 開発者ツールで「**[!UICONTROL run]**」をクリックします。 実行中のアクションが Visual Studio Code エディターに表示され、ログの表示が開始されます。
 

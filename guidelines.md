@@ -1,8 +1,8 @@
 ---
-source-git-commit: f15b9819d3319d22deccdf7e39c0f72728baaa39
-workflow-type: ht
-source-wordcount: '588'
-ht-degree: 100%
+source-git-commit: f199cecfe4409e2370b30783f984062196dd807d
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 91%
 
 ---
 # ドキュメントへの投稿に関するガイドライン
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ドキュメントを継続的に改善するため、ユーザーコミュニティ全体でドキュメントに投稿いただければ幸いです。変更修正依頼（プル要求）であるか問題報告（イシュー）であるかを問わず、修正、明確化、増補、例の追加などがドキュメントの改善になります。
 
-## ドキュメント標準
+## ドキュメントの標準
 
 ドキュメントへの投稿は、プルリクエストまたはイシューの形式で行い、アドビの投稿とドキュメントに関する標準に準拠する必要があります。
 
@@ -31,25 +31,25 @@ ht-degree: 100%
 
 ドキュメントの改善に役立つアイデアの投稿を歓迎します。ただし、コメント、イシューおよびプルリクエストは、*投稿*&#x200B;専用です。製品の使用方法、プロジェクトの実装方法、技術的な問題の解決方法についての質問に回答するためではありません。
 
-使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Manager] カスタマーサポートポータル](https://experienceleague.adobe.com/ja?support-solution=Experience+Manager&amp;lang=ja#home)の通常のサポートプロセスを通じて報告したり、[[!DNL Experience Manager]  コミュニティ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja)でディスカッションしたりする必要があります。
+使用方法や技術的な問題に関して質問がある場合は、[[!DNL Experience Manager]  カスタマーサポートポータル ](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=ja#home) または [[!DNL Experience Manager]  コミュニティ ](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ja) の通常のサポートプロセスを通じて報告する必要があります。
 
 ***ドキュメントの投稿はアドビカスタマーケアに代わるものではなく***、サポート関連の質問への回答を求める投稿は拒否されます。
 
-### 投稿は、影響を受けるドキュメントページを明確に参照する必要があります。
+### 投稿では、影響を受けるドキュメントページを明確に参照する必要があります
 
 ドキュメントの改善を提案するイシューを作成する場合は、影響を受けるページへのリンクを含める必要があります。ドキュメントページで「**このページを編集**」リンクを使用してイシューを作成すると、そのページへのリンクを含むイシューが自動的に作成されます。
 
 プルリクエストは、その性質上、影響を受けるページを参照するので、このプロセスはプルリクエストには当てはまりません。
 
-## ドキュメントガイドライン
+## ドキュメントのガイドライン
 
 アドビのドキュメントに投稿していただく場合は、特定のスタイルガイドラインに従ってください。
 
 これらのガイドラインに従うと、投稿のレビューが容易になり、その結果、アドビのドキュメントへの統合が早くなります。
 
-### 言葉遣いとスタイル
+### 言語とスタイル
 
-#### 言葉遣い
+#### 言語
 
 * ドキュメントは米国英語で作成および維持管理されています。
 * 文章をできるだけ簡単にしてください。

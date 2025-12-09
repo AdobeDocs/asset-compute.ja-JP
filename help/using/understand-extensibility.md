@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] の拡張について'
 description: カスタムアセット処理を実行するために [!DNL Asset Compute Service] の機能を拡張するタイミングと方法。
 exl-id: 3b903364-34cc-44d5-9a03-24a0102cf85d
-source-git-commit: c6f747ebd6d1b17834f1af0837609a148804f8a9
+source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 100%
 次の前提条件を満たしている必要があります。
 
 * Adobe Developer App Builder ツールがコンピューターにインストールされている。
-* [!DNL Experience Cloud] 組織である。 詳しくは、[App Builder ジャーニーの開始](https://developer.adobe.com/app-builder/docs/getting_started/#acquire-access-and-credentials)を参照してください。
+* [!DNL Experience Cloud] 組織である。 詳しくは、[App Builder ジャーニーの開始](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#acquire-access-and-credentials)を参照してください。
 * Experience 組織で、Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] が有効になっている。
-* [!DNL Adobe Experience Cloud] 組織が、[!DNL Adobe Developer App Builder] 開発者スニークピークプログラムに参加している。 [アクセス申請方法](https://developer.adobe.com/app-builder/docs/overview/getting_access)を参照してください。
+* [!DNL Adobe Experience Cloud] 組織が、[!DNL Adobe Developer App Builder] 開発者スニークピークプログラムに参加している。 [アクセス申請方法](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials)を参照してください。
 * 開発者の組織に開発者ロールまたは管理者権限がある。
 * Adobe [[!DNL aio-cli]](https://github.com/adobe/aio-cli) がローカルにインストールされている。
 

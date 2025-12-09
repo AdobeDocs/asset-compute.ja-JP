@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: db38b9dc27505aa7e04cf58a646005fc2e0e8782
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 89%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 [!DNL Asset Compute Service] に対応した開発をおこなえるように環境を設定するには、次の要件と手順に従います。
 
-1. [!DNL Adobe Developer App Builder] の[アクセス権と資格情報を取得](https://developer.adobe.com/app-builder/docs/getting_started/#acquire-access-and-credentials)します。
+1. [!DNL Adobe Developer App Builder] の[アクセス権と資格情報を取得](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#acquire-access-and-credentials)します。
 
-1. 必須ツールなど、[ローカル環境を設定](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)します。
+1. 必須ツールなど、[ローカル環境を設定](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up)します。
 
 1. スムーズに開発に着手するために役立つツールは次のとおりです。
 
@@ -40,13 +40,13 @@ ht-degree: 100%
 
 1. [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) にログオンします。 [!DNL Experience Manager] as a [!DNL Cloud Service] 統合と同じ [!DNL Experience Cloud] 組織に属していることを確認します。 Adobe Developer Console について詳しくは、[コンソールのドキュメント](https://developer.adobe.com/developer-console/docs/guides/)を参照してください。
 
-1. [App Builder プロジェクトを作成します](https://developer.adobe.com/app-builder/docs/getting_started/first_app/)。 **[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。 「App Builder」を選択します。 `Production` と `Stage` の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。 必要に応じて、ワークスペース（例：`Development`）を追加します。
+1. [App Builder プロジェクトを作成します](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#)。 **[!UICONTROL Create new project]**／**[!UICONTROL Project from template]** をクリックします。 「App Builder」を選択します。 `Production` と `Stage` の 2 つのワークスペースを持つ新しい App Builder プロジェクトが作成されます。 必要に応じて、ワークスペース（例：`Development`）を追加します。
 
 1. この App Builder プロジェクトで、ワークスペースを選択し、Asset Compute に必要なサービスを購読します。 **Add to Project**／**API** をクリックし、`Asset Compute`、`IO Events`、`IO Events Management` の各サービスを追加します。 最初の API を追加すると、秘密鍵の作成を促すメッセージが表示されます。 開発者ツールでカスタムアプリケーションをテストするには、この鍵が必要なので、この情報をコンピューターに保存します。
 
    >[!NOTE]
    >
-   >JWT は廃止されており、秘密鍵はダウンロードできません。アドビがテストツールのアップデートに取り組んでいる間、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、DevTools は機能しません。
+   >JWT は非推奨（廃止予定）になり、秘密鍵をダウンロードできません。 Adobeがテストツールの更新に取り組んでいる間は、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、devtools は機能しません。
 
 ## 次の手順 {#next-step}
 

@@ -2,10 +2,10 @@
 title: カスタムアプリケーションの動作について
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションの仕組みを理解するのに役立つ内部動作'
 exl-id: a3ee6549-9411-4839-9eff-62947d8f0e42
-source-git-commit: f15b9819d3319d22deccdf7e39c0f72728baaa39
+source-git-commit: f199cecfe4409e2370b30783f984062196dd807d
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '689'
+ht-degree: 99%
 
 ---
 
@@ -114,11 +114,11 @@ SDK は、レンディションごとに非同期の[レンディションコー
 
 この `batchWorker()` の動作は異なります。 すべてのレンディションを処理し、すべてのレンディションが処理された後にのみ、アップロードします。
 
-## [!DNL Adobe I/O] イベント {#aio-events}
+## [!DNL Adobe I/O Events] {#aio-events}
 
 SDK は、レンディションごとに Adobe [!DNL I/O Events] を送信します。これらのイベントは、結果に応じて `rendition_created` か `rendition_failed` のどちらかのタイプになります。詳しくは、を参照してください [Asset compute非同期イベント](api.md#asynchronous-events).
 
-## [!DNL Adobe I/O] イベントを受信  {#receive-aio-events}
+## 受信 [!DNL Adobe I/O Events] {#receive-aio-events}
 
 クライアントは、消費ロジックに従って Adobe [!DNL I/O Events] ジャーナルをポーリングします。最初のジャーナル URL は、`/register` API 応答で提供される URL です。イベントは、`requestId` を使用して識別できます。この ID はイベントに存在し、`/process` で返されるものと同じです。レンディションごとに個別のイベントがあります。このイベントは、レンディションがアップロードされる（または失敗する）とすぐに送信されます。一致するイベントを受信すると、クライアントは結果のレンディションを表示または処理できます。
 
@@ -140,7 +140,7 @@ await Promise.all(events.map(event => {
 }));
 ```
 
-ジャーナルイベントの取得方法について詳しくは、Adobe [[!DNL I/O Events]  API](https://developer.adobe.com/events/docs/guides/api/journaling_api/) を参照してください。
+ジャーナルイベントの取得方法について詳しくは、Adobe [[!DNL I/O Events]  API](https://developer.adobe.com/events/docs/guides/api/journaling-api#) を参照してください。
 
 <!-- TBD:
 * Illustration of the controls/data flow.

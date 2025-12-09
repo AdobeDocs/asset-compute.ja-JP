@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: 94fd8c0888185f64825046b7999655e9501a71fe
+source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
 workflow-type: tm+mt
 source-wordcount: '1489'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 100%
 
 [Adobe aio-cli](https://github.com/adobe/aio-cli) がローカルにインストールされていることを確認します。
 
-1. カスタムアプリケーションを作成するには、[App Builder プロジェクトを作成](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#4-bootstrapping-new-app-using-the-cli)します。 これを行うには、ターミナルで `aio app init <app-name>` を実行します。
+1. カスタムアプリケーションを作成するには、[App Builder プロジェクトを作成](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#4-bootstrapping-new-app-using-the-cli)します。 これを行うには、ターミナルで `aio app init <app-name>` を実行します。
 
-   まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) にログインするように促すメッセージがブラウザーに表示されます。 CLI からのログインについて詳しくは、[こちら](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli)を参照してください。
+   まだログインしていない場合は、このコマンドを実行すると、Adobe ID で [Adobe Developer Console](https://developer.adobe.com/console/user/servicesandapis) にログインするように促すメッセージがブラウザーに表示されます。 CLI からのログインについて詳しくは、[こちら](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#3-signing-in-from-cli)を参照してください。
 
-   アドビでは、最初にログインすることをお勧めします。 問題が発生した場合は、[ログインせずにアプリを作成する](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user)手順に従ってください。
+   アドビでは、最初にログインすることをお勧めします。 問題が発生した場合は、[ログインせずにアプリを作成する](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#42-developer-is-not-logged-in-as-enterprise-organization-user)手順に従ってください。
 
 1. ログイン後、CLI のプロンプトに従って、アプリケーションに使用する `Organization`、`Project`、`Workspace` を選択します。 [環境を設定](setup-environment.md)した際に作成したプロジェクトとワークスペースを選択します。 「`Which extension point(s) do you wish to implement ?`」というプロンプトが表示されたら、必ず `DX Asset Compute Worker` を選択します。
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 1. 残りのプロンプトに従い、Visual Studio Code（または、お好きなコードエディター）で新しいアプリケーションを開きます。 カスタムアプリケーションの基礎モードとサンプルコードが含まれています。
 
-   [App Builder アプリの主なコンポーネント](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#5-anatomy-of-an-app-builder-application)については、こちらを参照してください。
+   [App Builder アプリの主なコンポーネント](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#5-anatomy-of-an-app-builder-application)については、こちらを参照してください。
 
    テンプレートアプリケーションでは、アプリケーションレンディションのアップロード、ダウンロード、オーケストレーションにアドビの [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk#asset-compute-sdk) を活用するので、開発者はカスタムアプリケーションロジックを実装するだけで済みます。 `actions/<worker-name>` フォルダー内の `index.js` ファイルがカスタムアプリケーションコードの追加先です。
 
@@ -104,7 +104,7 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
 1. Adobe Developer Console からファイルをダウンロードします。 プロジェクトのルートに移動し、右上隅の「すべてをダウンロード」をクリックします。 ファイルは「`<namespace>-<workspace>.json`」というファイル名でダウンロードされます。 次のいずれかの操作をおこないます。
 
    * ファイル名を「`console.json`」に変更し、プロジェクトのルートに移動します。
-   * オプションとして、Adobe Developer Console 統合 JSON ファイルへの絶対パスを追加できます。 このファイルは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
+   * オプションとして、Adobe Developer Console 統合 JSON ファイルへの絶対パスを追加できます。 このファイルは、プロジェクトワークスペースにダウンロードされる [`console.json`](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#42-developer-is-not-logged-in-as-enterprise-organization-user) ファイルと同じです。
 
      ```conf
      ASSET_COMPUTE_INTEGRATION_FILE_PATH=
@@ -243,7 +243,7 @@ const orgId = params.auth.orgId; // Experience Cloud Organization
 
 ### サードパーティ製システムの資格情報の受け渡し {#pass-credentials-for-tp}
 
-他の外部サービスの資格情報を処理するには、これらをアクションのデフォルトパラメーターとして渡します。 送信中に自動的に暗号化されます。 詳しくは、[Adobe I/O Runtime 開発者ガイドのアクションの作成](https://developer.adobe.com/runtime/docs/guides/using/creating_actions/)を参照してください。 次に、デプロイ時に環境変数を使用してそれらを設定します。 これらのパラメーターには、アクション内の `params` オブジェクトでアクセスできます。
+他の外部サービスの資格情報を処理するには、これらをアクションのデフォルトパラメーターとして渡します。 送信中に自動的に暗号化されます。 詳しくは、[Adobe I/O Runtime 開発者ガイドのアクションの作成](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/creating-actions#)を参照してください。 次に、デプロイ時に環境変数を使用してそれらを設定します。 これらのパラメーターには、アクション内の `params` オブジェクトでアクセスできます。
 
 `manifest.yml` の `inputs` 内にデフォルトパラメーターを設定します。
 
@@ -278,7 +278,7 @@ const key = params.secretKey;
 
 ## アプリケーションのサイズ調整 {#sizing-workers}
 
-アプリケーションは、Adobe [!DNL I/O Runtime] のコンテナで実行されますが、`manifest.yml` を通じて設定できる以下の[制限](https://developer.adobe.com/runtime/docs/guides/using/system_settings/)が適用されます。
+アプリケーションは、Adobe [!DNL I/O Runtime] のコンテナで実行されますが、`manifest.yml` を通じて設定できる以下の[制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings#)が適用されます。
 
 ```yaml
     actions:
