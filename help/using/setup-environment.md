@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
+source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 89%
+source-wordcount: '416'
+ht-degree: 85%
 
 ---
 
@@ -52,7 +52,8 @@ ht-degree: 89%
 
 これで環境が設定されたので、[カスタムアプリケーションを作成](develop-custom-application.md)する準備が整いました。
 
-<!-- More ideas:
+<!-- 
+More ideas:
  
 * Any steps in the beginning that lead to gotchas later should be called out for caution? For example,
   * don't change some defaults initially

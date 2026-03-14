@@ -2,10 +2,10 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
+source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 99%
+source-wordcount: '1722'
+ht-degree: 93%
 
 ---
 
@@ -72,7 +72,8 @@ ht-degree: 99%
 
 アプリケーションの作成時にログインすると、App Builder 資格情報のほとんどが ENV ファイルに収集されます。 ただし、開発者ツールを使用するには、追加の資格情報が必要です。
 
-<!-- TBD: Check if manual setup of credentials is required.
+<!-- 
+TBD: Check if manual setup of credentials is required.
 Manual set up of credentials is removed from troubleshooting and best practices page. Link was broken.
 If you did not log in, refer to our troubleshooting guide to [set up credentials manually](troubleshooting.md).
 -->
@@ -155,7 +156,7 @@ Asset Compute 開発者ツールを使用してアプリケーションを実行
 次のサンプルカスタムアプリケーションが用意されています。
 
 * [worker-basic](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic)
-* [worker-animal-pictures](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-animal-pictures)
+* [働く動物の絵](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-animal-pictures)
 
 ### テンプレートカスタムアプリケーション {#template-custom-application}
 
@@ -191,7 +192,8 @@ exports.main = worker(async function (source, rendition) {
 
 例えば、[`worker-animal-pictures`](https://github.com/adobe/asset-compute-example-workers/blob/master/projects/worker-animal-pictures/worker-animal-pictures.js#L46) では、[`node-httptransfer`](https://github.com/adobe/node-httptransfer#node-httptransfer) ライブラリを使用してウィキメディアの静的 URL に対して取得リクエストを実行しています。
 
-<!-- TBD: Revisit later to see if this note is required.
+<!-- 
+TBD: Revisit later to see if this note is required.
 >[!NOTE]
 >
 >For extra authorization for these API calls, see [custom authorization checks](#custom-authorization-checks).
@@ -230,7 +232,8 @@ exports.main = worker(async function (source, rendition) {
 
 ### 他の Adobe API へのアクセス {#access-adobe-apis}
 
-<!-- TBD: Revisit this section. Where do we document console workspace creation?
+<!-- 
+TBD: Revisit this section. Where do we document console workspace creation?
 -->
 
 設定時に作成した [!DNL Asset Compute] コンソールワークスペースに API サービスを追加します。 これらのサービスは、[!DNL Asset Compute Service] で生成された JWT アクセストークンの一部です。 トークンとその他の資格情報には、アプリケーションアクションの `params` オブジェクト内でアクセスできます。
