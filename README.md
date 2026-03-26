@@ -1,10 +1,16 @@
 ---
-source-git-commit: f04e3c2495905e81afd57834f1a18947f57e7d56
+source-git-commit: 2256249aff19c93beefc05a80ee84e062eeb5a05
 workflow-type: tm+mt
-source-wordcount: '6'
-ht-degree: 0%
+source-wordcount: '70'
+ht-degree: 5%
 
 ---
-# アーカイブ
+# Adobe Asset Compute Service ドキュメント
 
-このリポジトリは<https://github.com/Adobe-Enterprise-Docs/asset-compute.ja-JP>に移行されました
+このドキュメントのリポジトリは[!DNL Adobe Asset Compute Service]用です。
+
+ドキュメントへのご協力は歓迎いたします。 詳しくは、次のリソースを参照してください。
+
+* [contributing.md](contributing.md)このドキュメントに貢献する方法の概要を説明します。
+* [guidelines.md](guidelines.md)投稿で期待される内容と、ドキュメントの投稿を作成する方法の概要について説明します。
+* [行動規範.md](code-of-conduct.md)このドキュメントプロジェクトに参加する際にAdobeが想定する行動の標準の概要について説明します。
