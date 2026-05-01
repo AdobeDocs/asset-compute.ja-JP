@@ -2,7 +2,9 @@
 cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
-product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8id: d09181b5-a36a-43de-ba01-36641440bc43
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
 type: Documentation
 role: Developer
 feature: Asset Compute Microservices
@@ -31,6 +33,6 @@ ht-degree: 91%
    + [カスタムアプリケーションの開発](develop-custom-application.md)
    + [カスタムアプリケーションのテスト](test-custom-application.md)
    + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-   + [ [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
+   + [&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
