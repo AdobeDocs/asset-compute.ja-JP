@@ -2,9 +2,13 @@
 title: ' [!DNL Asset Compute Service] に必要な開発環境の設定'
 description: カスタムコードの作成とテストを開始するための [!DNL Asset Compute Service] の開発環境の設定。
 exl-id: 91c12889-01d8-4757-9bdd-f73c491cd9d5
-source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
+TQID: https://experienceleague.adobe.com/vrjMTugKwGmpQ-zqOGSpOr9m05GfXMd02B-p2MIHh5E
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: 416
 ht-degree: 85%
 
 ---
@@ -46,7 +50,7 @@ ht-degree: 85%
 
    >[!NOTE]
    >
-   >JWT は非推奨（廃止予定）になり、秘密鍵をダウンロードできません。 Adobeがテストツールの更新に取り組んでいる間は、OAuth を使用して作成されたカスタムワーカーはデプロイできますが、devtools は機能しません。
+   >JWTは非推奨（廃止予定）であり、秘密鍵はダウンロードできません。 Adobeはテストツールの更新に取り組んでいますが、OAuthを使用して作成されたカスタムワーカーはデプロイできますが、devtoolsは機能しないことに注意してください。
 
 ## 次の手順 {#next-step}
 

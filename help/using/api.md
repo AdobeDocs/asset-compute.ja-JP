@@ -2,16 +2,21 @@
 title: '[!DNL Asset Compute Service] HTTP API'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
-source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
+TQID: https://experienceleague.adobe.com/fewAzOtKA-XTmpv-6Q0mlqXpalMWva6GpHlJSW6wPog
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: ae478996-b206-4712-9b0c-dc78a2644453id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085id: e17747bc-9b7b-44e6-a443-f54229a02620
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: '2995'
-ht-degree: 97%
+source-wordcount: 2995
+ht-degree: 98%
 
 ---
 
 # [!DNL Asset Compute Service] HTTP API {#asset-compute-http-api}
 
-この API の使用は開発目的に限られています。 API は、カスタムアプリケーションを開発する際にコンテキストとして提供されます。[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] API を使用して、処理情報をカスタムアプリケーションに渡します。 詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use)を参照してください。
+この API の使用は開発目的に限られています。 この API は、カスタムアプリケーションの開発用として提供されます。 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] では、この API を使用して処理情報をカスタムアプリケーションに渡します。 詳しくは、[アセットマイクロサービスと処理プロファイルの使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use)を参照してください。
 
 >[!NOTE]
 >
@@ -233,7 +238,7 @@ HTTP ステータスコードは次のとおりです。
 
 使用可能なフィールドは次のとおりです。
 
-| 名前 | タイプ | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |--------------|----------|-------------|---------|
 | `source` | `string` | 処理するソースアセットの URL。 オプション。リクエストしたレンディション形式に基づきます（例：`fmt=zip`）。 | `"http://example.com/image.jpg"` |
 | `source` | `object` | 処理するソースアセットの記述。 以下の [source オブジェクトのフィールド](#source-object-fields)の説明を参照してください。 オプション。リクエストしたレンディション形式に基づきます（例：`fmt=zip`）。 | `{"url": "http://example.com/image.jpg", "mimeType": "image/jpeg" }` |
@@ -253,7 +258,7 @@ HTTP ステータスコードは次のとおりです。
 
 ### source オブジェクトのフィールド {#source-object-fields}
 
-| 名前 | タイプ | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-----------|----------|-------------|---------|
 | `url` | `string` | 処理するソースアセットの URL。 必須。 | `"http://example.com/image.jpg"` |
 | `name` | `string` | ソースアセットファイル名。 MIME タイプが検出されない場合は、名前にファイル拡張子が使用される可能性があります。 URL パスで指定したファイル名よりも優先されます。 また、バイナリリソースの `content-disposition` ヘッダー内のファイル名よりも優先されます。 デフォルトは「file」です。 | `"image.jpg"` |
@@ -372,19 +377,19 @@ HTTP ステータスコードは次のとおりです。
 
 ### 共通のフィールド {#common-fields}
 
-| 名前 | タイプ | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
 | `fmt` | `string` | レンディションのターゲット形式は、テキスト抽出の場合は `text`、XMP メタデータを xml として抽出する場合は `xmp` にすることもできます。 [サポートされる形式](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)を参照してください | `png` |
 | `worker` | `string` | [カスタムアプリケーション](develop-custom-application.md) の URL。 `https://` URL にする必要があります。 このフィールドが存在する場合、カスタムアプリケーションによってレンディションが作成されます。 設定されたその他のレンディションフィールドはすべて、カスタムアプリケーションで使用されます。 | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | 生成されたレンディションを HTTP PUT を使用してアップロードする URL。 | `http://w.com/img.jpg` |
-| `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。 これは、[AEM/Oak直接バイナリアップロードの情報で &#x200B;](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)。この [&#x200B; マルチパートアップロード動作 &#x200B;](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html).<br> フィールドは、<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
+| `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。 この情報は、[ マルチパートのアップロード動作](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)を伴う[AEM / Oak Direct Binary Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)用です。<br> フィールド：<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
 | `userData` | `object` | オプション。 クライアントは予約スペースを制御し、レンディションイベントにそのまま渡します。 クライアントがカスタム情報を追加してレンディションイベントを識別できるようにします。 クライアントはいつでも自由に変更できるので、カスタムアプリケーションで変更したり依存したりしないでください。 | `{ ... }` |
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
 
 現在サポートされているファイル形式の一覧については、[サポートされているファイル形式](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)を参照してください。
 
-| 名前 | タイプ | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
 | `*` | `*` | [カスタムアプリケーション](develop-custom-application.md)で認識できる高度なカスタムフィールドを追加できます。 | |
 | `embedBinaryLimit` | `number`（バイト単位） | レンディションのファイルサイズが指定された値より小さい場合、そのレンディションは作成完了後に送信されるイベントに含まれます。 埋め込み可能な最大サイズは 32 KB（32 x 1024 バイト）です。 レンディションのサイズが上限 `embedBinaryLimit` を超える場合、レンディションはクラウドストレージ内の場所に配置され、イベントには埋め込まれません。 | `3276` |
@@ -405,9 +410,9 @@ HTTP ステータスコードは次のとおりです。
 
 PNG 形式が透かしとして使用されます。
 
-| 名前 | タイプ | 説明 | 例 |
+| 名前 | 種類 | 説明 | 例 |
 |-------------------|----------|-------------|---------|
-| `scale` | `number` | 透かしのスケール （`0.0` ～ `1.0`）。`1.0` は、透かしが元のスケール（1:1）を持ち、値が小さいほど透かしサイズが小さくなることを意味します。 | 値が `0.5` の場合は、元のサイズの半分であることを意味します。 |
+| `scale` | `number` | 透かしの倍率（`0.0`～`1.0`）。 `1.0`は、透かしが元の尺度（1:1）を持ち、値が小さいほど透かしのサイズが小さくなることを意味します。 | 値が `0.5` の場合は、元のサイズの半分であることを意味します。 |
 | `image` | `url` | 透かしに使用する PNG ファイルの URL。 | |
 
 ## 非同期イベント {#asynchronous-events}

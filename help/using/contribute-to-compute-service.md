@@ -2,9 +2,12 @@
 title: ' [!DNL Asset Compute Service] のオープンソースコンポーネントへの貢献'
 description: ' [!DNL Asset Compute Service] のオープンソースコンポーネントへの貢献。'
 exl-id: 99a4b4d9-4709-4f8e-9f8c-96ba1783c4c3
-source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
+TQID: https://experienceleague.adobe.com/LAVDCVO3tXCtApoq2h-ZLHN-7Q4rrB88CUrtJ-sKbcE
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: 225
 ht-degree: 94%
 
 ---
@@ -25,7 +28,7 @@ ht-degree: 94%
 
 * [Apache OpenWhisk 入門](https://github.com/apache/openwhisk/tree/master/docs#getting-started-with-openwhisk)。
 * [ラボ：を使用したコンポーザブル AI の構築 [!DNL Adobe Sensei] 関数とAdobe[!DNL I/O Runtime]](https://opensource.adobe.com/adobe-sensei-ai-functions/index.html).
-* Adobe[[!DNL I/O Runtime] FAQ](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#using-io-runtime).
+* Adobe [[!DNL I/O Runtime] FAQ](https://developer.adobe.com/app-builder/docs/intro_and_overview/faq#using-io-runtime)。
 
 <!-- 
 **TBD** for post-release:

@@ -2,10 +2,14 @@
 title: '[!DNL Adobe Asset Compute Service] ユーザーガイド'
 description: このドキュメントでは、カスタムコードの概要、開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  のタスクについて説明します。
 exl-id: 5acf87d1-a391-4802-bfce-e367fc8564df
-source-git-commit: 63f83ff33ac6cd090fac4f6db18000155f464643
+TQID: https://experienceleague.adobe.com/pLoude239KQnS4no1oSFaNzfzlHFdXvprrBg-NMUI0g
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 99%
+source-wordcount: 237
+ht-degree: 97%
 
 ---
 
@@ -17,7 +21,7 @@ ht-degree: 99%
 
 [!DNL Asset Compute Service] は、多くのファイル形式の変換をサポートしており、多くの Adobe サービスと統合されています。 [サポートされているファイル形式と統合サービスのリスト](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)を参照してください。
 
-[&#x200B; [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] で利用可能なアセットマイクロサービス機能](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)および [!DNL Experience Manager] のマイクロサービスの使用方法については、概要を参照してください。
+[ [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] で利用可能なアセットマイクロサービス機能](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)および [!DNL Experience Manager] のマイクロサービスの使用方法については、概要を参照してください。
 
 [!DNL Asset Compute Service] の拡張機能は、拡張機能開発者からの貢献を歓迎するオープン開発モデルの下、[github.com/adobe](https://github.com/adobe) で開発されています。 カスタムアプリケーションの開発、作成、テスト、デプロイに関連するコンポーネントはすべてオープンソースです。 Compute Service への貢献の方法と場所については、[こちら](contribute-to-compute-service.md)を参照してください。
 
