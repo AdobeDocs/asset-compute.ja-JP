@@ -2,9 +2,19 @@
 title: ' [!DNL Asset Compute Service] に対応した開発'
 description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
-source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
+TQID: https://experienceleague.adobe.com/vxnV2d7jBpmAh3CxyP5pp3qrjPuV39J10uZ1CJMVByc
+product_v2:
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: 1722
 ht-degree: 93%
 
 ---
@@ -156,7 +166,7 @@ Asset Compute 開発者ツールを使用してアプリケーションを実行
 次のサンプルカスタムアプリケーションが用意されています。
 
 * [worker-basic](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-basic)
-* [働く動物の絵](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-animal-pictures)
+* [worker-animal-pictures](https://github.com/adobe/asset-compute-example-workers/tree/master/projects/worker-animal-pictures)
 
 ### テンプレートカスタムアプリケーション {#template-custom-application}
 

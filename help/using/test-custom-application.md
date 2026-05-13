@@ -2,9 +2,17 @@
 title: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ'
 description: ' [!DNL Asset Compute Service]  カスタムアプリケーションのテストとデバッグ。'
 exl-id: c2534904-0a07-465e-acea-3cb578d3bc08
-source-git-commit: aed361a577fc53caec4118e417b1c0c814617b51
+TQID: https://experienceleague.adobe.com/43OlMHlUxu78CbxOEaAXi7gN6pwYS3QqGgV44WDSyCc
+product_v2:
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: 855
 ht-degree: 97%
 
 ---
@@ -201,7 +209,7 @@ tests/
 
    `aio app deploy` の出力から `ACTION NAME` を取得します。
 
-1. 「run/debugged configuration」から「`wskdebug worker`」を選択し、「再生」アイコンを押します。 **[!UICONTROL デバッグコンソール]**&#x200B;ウィンドウに&#x200B;**[!UICONTROL アクティベーションの準備完了]**&#x200B;と表示されるまで、起動を待ちます。
+1. 実行/デバッグ設定から「`wskdebug worker`」を選択し、再生アイコンを押します。 **[!UICONTROL デバッグコンソール]**&#x200B;ウィンドウに&#x200B;**[!UICONTROL アクティベーションの準備完了]**&#x200B;と表示されるまで、起動を待ちます。
 
 1. 開発者ツールで「**[!UICONTROL run]**」をクリックします。 実行中のアクションが Visual Studio Code エディターに表示され、ログの表示が開始されます。
 
