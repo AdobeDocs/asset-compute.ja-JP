@@ -2,16 +2,15 @@
 cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-  - id: d09181b5-a36a-43de-ba01-36641440bc43
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8id: d09181b5-a36a-43de-ba01-36641440bc43
+usetq: true
 type: Documentation
 role: Developer
 feature: Asset Compute Microservices
 user-guide-title: Asset Compute Service ガイド
 user-guide-description: このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
 breadcrumb-title: Asset Compute Service ガイド
-source-git-commit: 7997d284c6051dd2b9f7635f955bdc49d52e843a
+source-git-commit: d39824c90b25004d67cec7122f039e9d238ea0fe
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 91%
@@ -33,6 +32,6 @@ ht-degree: 91%
    + [カスタムアプリケーションの開発](develop-custom-application.md)
    + [カスタムアプリケーションのテスト](test-custom-application.md)
    + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-   + [&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
+   + [ [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
