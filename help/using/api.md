@@ -3,18 +3,10 @@ title: '[!DNL Asset Compute Service] HTTP API'
 description: カスタムアプリケーションを作成するための [!DNL Asset Compute Service] HTTP API。
 exl-id: 4b63fdf9-9c0d-4af7-839d-a95e07509750
 TQID: https://experienceleague.adobe.com/fewAzOtKA-XTmpv-6Q0mlqXpalMWva6GpHlJSW6wPog
-product_v2:
-  - id: d09181b5-a36a-43de-ba01-36641440bc43
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
-  - id: ae478996-b206-4712-9b0c-dc78a2644453
-  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
-  - id: e17747bc-9b7b-44e6-a443-f54229a02620
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2: id: d09181b5-a36a-43de-ba01-36641440bc43id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: ae478996-b206-4712-9b0c-dc78a2644453id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085id: e17747bc-9b7b-44e6-a443-f54229a02620
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
 source-wordcount: 2995
@@ -390,7 +382,7 @@ HTTP ステータスコードは次のとおりです。
 | `fmt` | `string` | レンディションのターゲット形式は、テキスト抽出の場合は `text`、XMP メタデータを xml として抽出する場合は `xmp` にすることもできます。 [サポートされる形式](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support)を参照してください | `png` |
 | `worker` | `string` | [カスタムアプリケーション](develop-custom-application.md) の URL。 `https://` URL にする必要があります。 このフィールドが存在する場合、カスタムアプリケーションによってレンディションが作成されます。 設定されたその他のレンディションフィールドはすべて、カスタムアプリケーションで使用されます。 | `"https://1234.adobeioruntime.net`<br>`/api/v1/web`<br>`/example-custom-worker-master/worker"` |
 | `target` | `string` | 生成されたレンディションを HTTP PUT を使用してアップロードする URL。 | `http://w.com/img.jpg` |
-| `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。 この情報は、[&#x200B; マルチパートのアップロード動作](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)を伴う[AEM / Oak Direct Binary Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)用です。<br> フィールド：<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
+| `target` | `object` | 生成されたレンディションの署名済み URL へのマルチパートアップロードの情報。 この情報は、[ マルチパートのアップロード動作](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html)を伴う[AEM / Oak Direct Binary Upload](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)用です。<br> フィールド：<ul><li>`urls`：文字列配列。署名済みのパート URL ごとに 1 つの文字列が割り当てられます。</li><li>`minPartSize`：1 つのパート（URL）に使用する最小サイズ</li><li>`maxPartSize`：1 つのパート（URL）に使用する最大サイズ</li></ul> | `{ "urls": [ "https://part1...", "https://part2..." ], "minPartSize": 10000, "maxPartSize": 100000 }` |
 | `userData` | `object` | オプション。 クライアントは予約スペースを制御し、レンディションイベントにそのまま渡します。 クライアントがカスタム情報を追加してレンディションイベントを識別できるようにします。 クライアントはいつでも自由に変更できるので、カスタムアプリケーションで変更したり依存したりしないでください。 | `{ ... }` |
 
 ### レンディション固有のフィールド {#rendition-specific-fields}
