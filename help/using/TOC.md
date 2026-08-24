@@ -27,6 +27,6 @@ ht-degree: 91%
   + [カスタムアプリケーションの開発](develop-custom-application.md)
   + [カスタムアプリケーションのテスト](test-custom-application.md)
   + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-  + [ [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
+  + [&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
