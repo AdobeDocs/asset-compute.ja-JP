@@ -1,20 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Assets
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-  - id: d09181b5-a36a-43de-ba01-36641440bc43
-usetq: true
-type: Documentation
-role: Developer
 feature: Asset Compute Microservices
 user-guide-title: Asset Compute Service ガイド
 user-guide-description: このドキュメントでは、カスタムコードの開発、管理、デプロイ、トラブルシューティングの方法など、 [!DNL Asset Compute Service]  に関連するタスクについて説明しています。
 breadcrumb-title: Asset Compute Service ガイド
-source-git-commit: d39824c90b25004d67cec7122f039e9d238ea0fe
+source-git-commit: adfa6b066d5b77362e8dd8a10e164eaea6129abc
 workflow-type: tm+mt
-source-wordcount: 109
+source-wordcount: '109'
 ht-degree: 91%
 
 ---
@@ -28,12 +21,12 @@ ht-degree: 91%
 + [アーキテクチャ](architecture.md)
 + [API リファレンス](api.md)
 + Asset Compute Serviceの拡張 {#extend}
-   + [Compute Service の拡張について](understand-extensibility.md)
-   + [環境を設定する](setup-environment.md)
-   + [アプリの内部概念について](custom-application-internals.md)
-   + [カスタムアプリケーションの開発](develop-custom-application.md)
-   + [カスタムアプリケーションのテスト](test-custom-application.md)
-   + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
-   + [&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
+  + [Compute Service の拡張について](understand-extensibility.md)
+  + [環境を設定する](setup-environment.md)
+  + [アプリの内部概念について](custom-application-internals.md)
+  + [カスタムアプリケーションの開発](develop-custom-application.md)
+  + [カスタムアプリケーションのテスト](test-custom-application.md)
+  + [カスタムアプリケーションのデプロイ](deploy-custom-application.md)
+  + [&#x200B; [!DNL Experience Manager] as a [!DNL Cloud Service]での統合と使用](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/asset-microservices-overview)
 + [トラブルシューティング](troubleshooting.md)
 + [オープンソースプロジェクトへの貢献](contribute-to-compute-service.md)
