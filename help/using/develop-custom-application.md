@@ -1,24 +1,27 @@
 ---
-title: ' [!DNL Asset Compute Service] に対応した開発'
-description: ' [!DNL Asset Compute Service] を使用してカスタムアプリケーションを作成します。'
+title: '[!DNL Asset Compute Service]用に開発'
+description: '[!DNL Asset Compute Service]を使用してカスタムアプリケーションを作成します。'
 exl-id: a0c59752-564b-4bb6-9833-ab7c58a7f38e
 TQID: https://experienceleague.adobe.com/vxnV2d7jBpmAh3CxyP5pp3qrjPuV39J10uZ1CJMVByc
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
+    internal-label: Implementation
+source-git-commit: 8975f209c4f0c170e7486a366ceeff2b221d1fa5
 workflow-type: tm+mt
-source-wordcount: 1722
+source-wordcount: '1722'
 ht-degree: 93%
-
 ---
-
 # カスタムアプリケーションの開発 {#develop}
 
 カスタムアプリケーションの開発を始める前に、以下をおこないます。
@@ -70,7 +73,7 @@ ht-degree: 93%
    ◯ Generic
    ```
 
-1. 残りのプロンプトに従い、Visual Studio Code（または、お好きなコードエディター）で新しいアプリケーションを開きます。 カスタムアプリケーションの基礎モードとサンプルコードが含まれています。
+1. 残りのプロンプトに従い、Visual Studio Code（または、お好きなコードエディター）で新しいアプリケーションを開きます。 カスタムアプリケーション用のひな形とサンプルコードが含まれています。
 
    [App Builder アプリの主なコンポーネント](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#5-anatomy-of-an-app-builder-application)については、こちらを参照してください。
 
@@ -80,7 +83,7 @@ ht-degree: 93%
 
 ### 資格情報の追加 {#add-credentials}
 
-アプリケーションの作成時にログインすると、App Builder 資格情報のほとんどが ENV ファイルに収集されます。 ただし、開発者ツールを使用するには、追加の資格情報が必要です。
+アプリケーションの作成時にログインすると、App Builder 資格情報のほとんどが ENV ファイルに追加されます。 ただし、開発者ツールを使用するには、追加の資格情報が必要です。
 
 <!-- 
 TBD: Check if manual setup of credentials is required.
@@ -121,7 +124,7 @@ If you did not log in, refer to our troubleshooting guide to [set up credentials
      ASSET_COMPUTE_INTEGRATION_FILE_PATH=
      ```
 
-1. S3 ストレージか Azure ストレージのいずれかの資格情報を追加します。 1 つのクラウドストレージソリューションへのアクセスのみ必要です。
+1. S3 ストレージか Azure ストレージのいずれかの資格情報を追加します。 必要なのは、1 つのクラウドストレージソリューションへのアクセスだけです。
 
    ```conf
    # S3 credentials
@@ -211,7 +214,7 @@ TBD: Revisit later to see if this note is required.
 
 ### カスタムパラメーターの受け渡し {#pass-custom-parameters}
 
-カスタム定義のパラメーターをレンディションオブジェクトに渡すことができます。 これらは、アプリケーション内の [`rendition` 手順](https://github.com/adobe/asset-compute-sdk#rendition)で参照できます。 レンディションオブジェクトの例を次に示します。
+レンディションオブジェクトを介して、カスタム定義のパラメーターを渡すことができます。 これらは、アプリケーション内の [`rendition` 手順](https://github.com/adobe/asset-compute-sdk#rendition)で参照できます。 レンディションオブジェクトの例を次に示します。
 
 ```json
 "renditions": [
@@ -238,7 +241,7 @@ exports.main = worker(async function (source, rendition) {
 
 ## 認証と承認のサポート {#authentication-authorization-support}
 
-デフォルトでは、Asset Compute カスタムアプリケーションには、App Builder プロジェクトの承認および認証チェックが付属しています。 `manifest.yml` で `require-adobe-auth` 注釈を `true` に設定することで有効になります。
+デフォルトでは、Asset Compute カスタムアプリケーションには、App Builder プロジェクトの認可および認証チェックが付属しています。 `manifest.yml` で `require-adobe-auth` 注釈を `true` に設定することで有効になります。
 
 ### 他の Adobe API へのアクセス {#access-adobe-apis}
 
@@ -283,7 +286,7 @@ packages:
 SECRET_KEY=secret-value
 ```
 
-実稼働デプロイメントの場合は、GitHub アクションでのシークレットの使用など、CI システムで環境変数を設定する場合もあります。 最後に、アプリケーション内で次のようにデフォルトパラメーターにアクセスします。
+本番デプロイメントの場合は、GitHub Actions でのシークレットの使用など、CI システムで環境変数を設定する場合もあります。 最後に、アプリケーション内で次のようにデフォルトパラメーターにアクセスします。
 
 ```javascript
 const key = params.secretKey;
@@ -307,10 +310,10 @@ Asset Compute アプリケーションで実行される処理が広範囲にわ
 
 Runtime ではアクションのデフォルトのタイムアウトは 1 分ですが、`timeout` の制限値（ミリ秒）を設定して増やすことができます。 サイズの大きいファイルを処理することが想定される場合は、この時間を長くしてください。 ソースのダウンロード、ファイルの処理、レンディションのアップロードにかかる合計時間を考慮します。 アクションがタイムアウトした場合、つまり、指定したタイムアウト上限までにアクティベーションが返されない場合、Runtime はコンテナを破棄し、再利用しません。
 
-Asset Compute アプリケーションは、本質的に、ネットワークとディスクの入力または出力にバインドされる傾向があります。 まずソースファイルをダウンロードする必要があります。 多くの場合、処理には大量のリソースが消費されるので、結果のレンディションが再度アップロードされます。
+Asset Compute アプリケーションは、本質的に、ネットワークやディスクの入力または出力性能に制約される傾向があります。 まずソースファイルをダウンロードする必要があります。 多くの場合、処理は大量のリソースを必要とし、その後、生成されたレンディションが再度アップロードされます。
 
 `memorySize` パラメーターを使用して、アクションコンテナに割り当てられるメモリをメガバイト単位で指定できます。 現在、このパラメーターは、コンテナが取得する CPU アクセスの量も定義し、最も重要なのは、Runtime の使用コストの重要な要素であることです（コンテナが大きいほどコストが大きくなります）。 処理に多くのメモリや CPU が必要な場合は、ここで大きな値を使用しますが、コンテナが大きくなるほど全体的なスループットが低下するので、リソースを無駄にしないように注意してください。
 
-さらに、この `concurrency` 設定を使用して、コンテナ内でのアクションの同時実行性を制御することができます。 この設定は、（同じアクションの）1 つのコンテナが取得する同時アクティベーションの数です。 このモデルでは、アクションコンテナは、複数の同時リクエストをその上限まで受け取る Node.js サーバーのようなものです。 Runtime のデフォルトの `memorySize` は、200 MB に設定され、小規模な App Builder アクションに最適です。 Asset Compute アプリケーションの場合、ローカル処理とディスク使用量が多いので、このデフォルトは過度になる可能性があります。 実装によっては、一部のアプリケーションは、同時実行アクティビティではうまく動作しない場合もあります。 Asset Compute SDK を使用すると、異なる一意のフォルダーにファイルを書き込むことで、アクティベーションが確実に分離されます。
+さらに、この `concurrency` 設定を使用して、コンテナ内でのアクションの同時実行性を制御することができます。 この設定は、（同じアクションの）1 つのコンテナが取得する同時アクティベーションの数です。 このモデルでは、アクションコンテナは、複数の同時リクエストをその上限まで受け取る Node.js サーバーのようなものです。 Runtime のデフォルトの `memorySize` は、200 MB に設定され、小規模な App Builder アクションに最適です。 Asset Compute アプリケーションの場合、ローカル処理とディスク使用量が多いので、このデフォルトは過度になる可能性があります。 実装によっては、一部のアプリケーションが、同時実行ではうまく動作しない場合もあります。 Asset Compute SDK を使用すると、異なる一意のフォルダーにファイルを書き込むことで、アクティベーションが確実に分離されます。
 
 アプリケーションをテストして、`concurrency` と `memorySize` の最適な値を見つけてください。 コンテナが大きい、つまりメモリ上限が大きいと、同時実行性が高くなる可能性がありますが、同時に、トラフィック量が少ない場合にリソースが無駄になる可能性があります。
