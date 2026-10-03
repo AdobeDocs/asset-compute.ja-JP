@@ -58,5 +58,5 @@ Adobeは、パブリックリポジトリ上で行われた投稿に対して満
 
 ## その他の情報
 
-GitHub オーサリングプラットフォームの使用方法について詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction)を参照してください。
+GitHub オーサリングプラットフォームの使用方法について詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/ja/docs/contributor/contributor-guide/introduction)を参照してください。
 
