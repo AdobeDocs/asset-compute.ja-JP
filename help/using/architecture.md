@@ -1,24 +1,27 @@
 ---
-title: ' [!DNL Asset Compute Service] のアーキテクチャ'
-description: ' [!DNL Asset Compute Service] の API、アプリケーション、SDK が連携して、クラウドネイティブなアセット処理サービスを提供する仕組み。'
+title: '[!DNL Asset Compute Service] のアーキテクチャ'
+description: '[!DNL Asset Compute Service]個のAPI、アプリケーション、SDKが連携して、クラウドネイティブなアセット処理サービスを提供する方法。'
 exl-id: 658ee4b7-5eb1-4109-b263-1b7d705e49d6
 TQID: https://experienceleague.adobe.com/HM9aYFHI98DFs4rfcStr-mpAfYVrjvMtlO6N7azO-20
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 source-git-commit: 2510f77fed8d0f0708e09f32d0b13a437d2ede4f
 workflow-type: tm+mt
-source-wordcount: 494
-ht-degree: 98%
-
+source-wordcount: '495'
+ht-degree: 95%
 ---
-
 # [!DNL Asset Compute Service] のアーキテクチャ {#overview}
 
 [!DNL Asset Compute Service] は、サーバーレスの Adobe [!DNL `I/O Runtime`] プラットフォーム上に作成されています。 アセットに Adobe Sensei コンテンツサービスを提供します。 呼び出し側クライアント（Adobe [!DNL Experience Manager] as a [!DNL Cloud Service] のみサポート）には、アセットに必要な Adobe Sensei 生成情報が提供されます。 返される情報は JSON 形式です。
@@ -45,7 +48,7 @@ ht-degree: 98%
 
 * **アセットを処理するアプリケーション**&#x200B;は、特定のタイプのファイル形式またはターゲットレンディションに特化しています。 概念的には、アプリケーションは UNIX® パイプの概念と似ています。入力ファイルが 1 つ以上の出力ファイルに変換されます。
 
-* **A [共通アプリケーションライブラリ](https://github.com/adobe/asset-compute-sdk)** 一般的なタスクを処理します。 例えば、ソースファイルのダウンロード、レンディションのアップロード、エラー報告、イベントの送信、監視などです。 この設計により、アプリケーションの開発がサーバーレスの概念に準拠し、ローカルファイルシステムに限定されたインタラクションで簡単に行えるようになります。
+* **A [共通アプリケーションライブラリ](https://github.com/adobe/asset-compute-sdk)** 一般的なタスクを処理します。 例えば、ソースファイルのダウンロード、レンディションのアップロード、エラー報告、イベントの送信、モニタリングなどです。 この設計により、アプリケーションの開発がサーバーレスの概念に準拠し、ローカルファイルシステムに限定されたインタラクションで簡単に行えるようになります。
 
 <!-- 
 TBD:
