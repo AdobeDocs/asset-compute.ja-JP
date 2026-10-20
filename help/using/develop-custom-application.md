@@ -196,7 +196,7 @@ exports.main = worker(async (source, rendition) => {
 ```javascript
 exports.main = worker(async function (source, rendition) {
 
-    const response = await fetch('https://adobe.com', {
+    const response = await fetch('https://adobe.com/jp', {
         method: 'GET',
         Authorization: params.AUTH_KEY
     })
